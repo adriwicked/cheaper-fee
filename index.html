@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78965982-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-78965982-2');
+    </script>
+        
+    <meta charset="utf-8">
+    <title>CheaperFee</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div id="fee-calculator">        
+        <img src="imgs/cheaper_fee_logo.png" id="logo" class="img-responsive">
+          <div id="size-div">
+            <h2 id="FirstH" class="blue-text margin-bottom">Set the size your transaction will have</h2>
+            <input type="text" id="Size" class="short-input-text left-input" onkeypress="return isNumber(event)"><select id="SizeSelector" class="short-input-select select-white right-input margin-bottom" selected="bytes">
+              <option value="bytes">bytes</option>
+              <option value="kilobytes">kilobytes</option>
+            </select><br><button type="button" id="ConfirmSize" class="btn btn-info btn-lg">Confirm</button>
+          </div>                
+
+        <div id="fee-rate-div">
+          <div id="fee-rate-box">
+            <h2 id="SecondH" class="blue-text-disabled margin-bottom">Here you can set the time you are willing to wait or the fee rate you are willing to pay</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="box-right">
+                    <!-- <p>Estimated confirmation time</p> -->
+                    <input type="text" id="Time" class="short-input-text left-input" onkeypress="return isNumber(event)"><select id="TimeSelector" class="short-input-select select-white-disabled right-input" selected="min">
+                      <option value="min">minutes</option>
+                      <option value="hours">hours</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="box-left">
+                    <!-- <p>Fee rate</p> -->
+                    <input type="text" id="FeeRate" class="short-input-text left-input" onkeypress="return isNumber(event)"><select id="FeeRateSelector" class="short-input-select select-white-disabled right-input" selected="satbyte">
+                      <option value="satbyte">sat/byte</option>
+                      <option value="satkb">sat/kilobyte</option>     
+                      <option value="mbtcbyte">mBTC/byte</option>
+                      <option value="mbtckb">mBTC/kilobyte</option>
+                    </select> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="total-fee-div" class="margin-bottom">
+          <div id="total-fee-box">
+            <h2 id="ThirdH" class="blue-text-disabled margin-bottom">But you can also set the total transaction fee in fiat currency or bitcoins</h2>
+            <!-- <p>Total transaction fee</p> -->
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">   
+                  <div class="box-right">                  
+                    <input type="text" id="Currency" class="short-input-text left-input" onkeypress="return isNumber(event)"><select id="CurrencySelector" class="short-input-select select-white-disabled right-input" selected="usd">
+                      <option value="usd">$</option>
+                      <option value="eur">€</option>
+                      <!-- <option value="pound">£</option> -->
+                    </select>   
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="box-left">                  
+                    <input type="text" id="TotalFee" class="short-input-text left-input" onkeypress="return isNumber(event)"><select id="TotalFeeSelector" class="short-input-select select-white-disabled right-input" selected="sat">
+                      <option value="sat">satoshis</option>
+                      <option value="bits">bits</option>     
+                      <option value="mbtc">mBTC</option>
+                      <option value="btc">BTC</option>
+                    </select>
+                  </div>
+                </div>                   
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h2 class="orange-donations">Donations</h2>          
+          <p>Bitcoin address: 1EXkuX2yEpNipVJ2b1ymQ3MKQwV3kPzXmq</p>
+          <img src="imgs/qr_color_min.png" id="logo" class="img-responsive">
+      </div>
+      </div>
+    </div>
+
+    <br>    
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/ajax_requests.js"></script>
+    <script src="js/fee_calculation.js"></script>
+  </body>
+</html>

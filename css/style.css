@@ -1,0 +1,139 @@
+@font-face { font-family: Merriweather_R; src: url(fonts/Merriweather-Regular.otf); }
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #35353F;
+	/*Azul claro 5CE2ED*/
+	color: white;
+	font-family: Merriweather_R;		
+	font-size: 1.8rem;
+}
+
+hr {
+	border-color: #26272C;
+	border-width: 2px;
+}
+
+input {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border-top: 1px solid #636370;
+	border-right: 0px;
+	border-bottom: 1px solid #636370;
+	border-left: 1px solid #636370;
+	padding: 8px;
+	text-align: center;
+	background-color: #26272C;
+	color: #b3b3c1;
+}
+
+select {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #636370;
+	padding: 9px;
+	text-align: center;
+	background-color: #26272C;
+	/*color: #b3b3c1;*/
+}
+
+.select-white {
+	color: #b3b3c1;	
+}
+
+.select-white-disabled {
+	color: #b3b3c133;	
+}
+
+#logo {
+	margin-bottom: 40px;
+}
+
+#fee-calculator {
+	text-align: center;;
+	/*width: 500px;*/
+    margin: 4% auto;
+}
+
+.short-input-text {
+	width: 100px;
+}
+
+.short-input-select {
+	width: 200px;
+}
+
+.left-input {
+	-webkit-border-radius: 6px 0px 0px 6px;
+	-moz-border-radius: 6px 0px 0px 6px;
+	border-radius: 6px 0px 0px 6px;
+}
+
+.right-input {
+	-webkit-border-radius: 0px 6px 6px 0px;
+	-moz-border-radius: 0px 6px 6px 0px;
+	border-radius: 0px 6px 6px 0px;
+}
+
+#size-div {
+	background-color: #26272C;
+	padding: 30px 0px 40px 0px;
+}
+
+#fee-rate-div {
+	padding: 30px 0px 40px 0px;	
+}
+
+#fee-rate-box {
+	/*width: 960px;*/
+	margin: 0 auto;
+}
+
+.box-right {
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+}
+
+.box-left {
+	display: inline-block;
+	float: left;
+	margin-left: 20px;
+}
+
+#total-fee-div {
+	background-color: #26272C;
+	padding: 30px 0px 40px 0px;
+}
+
+#total-fee-box {
+	/*width: 960px;*/
+	margin: 0 auto;
+}
+
+.blue-text {
+	color: #5CE2ED;
+}
+
+
+.blue-text-disabled {
+	color: #5CE2ED33;
+}
+
+.orange-donations {
+	color: #F8BF38;
+}
+
+.margin-bottom {
+	margin-bottom: 30px;
+}
+
+.container-fluid {
+	padding-right: 0px;
+	padding-left: 0px;
+}
